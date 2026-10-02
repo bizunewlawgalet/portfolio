@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bizunew Lawgalet | CS Student & Developer Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="header">
+      <div class="container nav">
+        <a href="#home" class="logo"
+          ><span class="logo-tag">BL</span> Bizunew<span
+            style="color: var(--cyan)"
+            >.dev</span
+          ></a
+        >
+        <nav class="nav-links" id="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button
+            class="icon-btn"
+            id="theme-toggle"
+            title="Toggle Dark/Light"
+          ></button>
+          <button class="icon-btn menu-btn" id="menu-btn" title="Menu"></button>
+        </div>
+      </div>
+    </header>
+
+    <!-- 1. Home / Hero -->
+    <section class="hero" id="home">
+      <div class="container grid-2">
+        <div>
+          <span class="badge"> Welcome to my Portfolio</span>
+          <h1 class="hero-title">
+            Hi, I'm <br /><span class="grad-text">Bizunew Lawgalet</span>
+          </h1>
+          <div class="hero-role">
+            <span id="typing-role">3rd-Year CS Student</span>
+          </div>
+          <p class="hero-desc">
+            Passionate 3rd-year Computer Science undergraduate dedicated to
+            building clean, efficient software, interactive web solutions, and
+            hands-on system diagnostics.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap">
+            <a href="#projects" class="btn btn-primary">View My Projects →</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+        <div class="profile-box">
+          <div class="avatar" id="avatar-container">
+            <img src="assets/profile.jpg" alt="Bizunew Lawgalet" />
+          </div>
+          <h3>Bizunew Lawgalet</h3>
+          <p style="color: var(--cyan); font-size: 0.9rem; font-weight: 600">
+            Computer Science • Year 2 & 3
+          </p>
+          <div class="stats-row">
+            <div>
+              <div class="stat-val">2nd & 3rd</div>
+              <div class="stat-lbl">Year</div>
+            </div>
+            <div>
+              <div class="stat-val">4+</div>
+              <div class="stat-lbl">Projects</div>
+            </div>
+            <div>
+              <div class="stat-val">100%</div>
+              <div class="stat-lbl">Dedication</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Me -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 2.5rem">
+          <span class="badge">About Me</span>
+          <h2 style="font-size: 2rem; margin-top: 0.5rem">
+            Who I Am & <span class="grad-text">My Vision</span>
+          </h2>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Personal Introduction</h3>
+            <p style="color: var(--text-sub); margin: 1rem 0">
+              I am a <strong>3rd-year Computer Science student</strong> with a
+              keen interest in programming, problem solving, and system
+              architecture. I enjoy learning how systems function from low-level
+              memory & hardware up to responsive user interfaces.
+            </p>
+            <div
+              style="
+                border-left: 3px solid var(--cyan);
+                padding-left: 1rem;
+                margin-top: 1.25rem;
+              "
+            >
+              <h4 style="color: var(--cyan)">Future Career Goal</h4>
+              <p
+                style="
+                  color: var(--text-sub);
+                  font-size: 0.92rem;
+                  margin-top: 0.3rem;
+                "
+              >
+                To become a versatile
+                <strong>Full-Stack Software Engineer & Solutions Builder</strong
+                >, crafting scalable systems, writing clean maintainable code,
+                and driving technological innovation.
+              </p>
+            </div>
+          </div>
+          <div class="grid-2" style="gap: 1rem">
+            <div class="card">
+              <h4>Analytical Mind</h4>
+              <p
+                style="
+                  color: var(--text-sub);
+                  font-size: 0.85rem;
+                  margin-top: 0.4rem;
+                "
+              >
+                Data structures, algorithms, and computational problem solving.
+              </p>
+            </div>
+            <div class="card">
+              <h4>Clean Code</h4>
+              <p
+                style="
+                  color: var(--text-sub);
+                  font-size: 0.85rem;
+                  margin-top: 0.4rem;
+                "
+              >
+                OOP principles in Java & C++, organized and maintainable
+                structure.
+              </p>
+            </div>
+            <div class="card">
+              <h4>Responsive Web</h4>
+              <p
+                style="
+                  color: var(--text-sub);
+                  font-size: 0.85rem;
+                  margin-top: 0.4rem;
+                "
+              >
+                Modern semantic HTML, responsive CSS, and interactive
+                JavaScript.
+              </p>
+            </div>
+            <div class="card">
+              <h4>🔧 Hardware & OS</h4>
+              <p
+                style="
+                  color: var(--text-sub);
+                  font-size: 0.85rem;
+                  margin-top: 0.4rem;
+                "
+              >
+                Hands-on PC diagnostics, OS setup, and troubleshooting.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 2rem">
+          <span class="badge">Technical Skills</span>
+          <h2 style="font-size: 2rem; margin-top: 0.5rem">
+            My <span class="grad-text">Skills</span>
+          </h2>
+        </div>
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="prog">Programming</button>
+          <button class="filter-btn" data-filter="sys">CS & Systems</button>
+        </div>
+        <div class="grid-3">
+          <div class="card skill-item" data-category="web">
+            <h4>HTML & CSS</h4>
+            <span style="font-size: 0.8rem; color: var(--cyan)"
+              >Advanced Foundations</span
+            >
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 90%"></div>
+            </div>
+            <div class="tag-list">
+              <span class="tag">HTML5</span><span class="tag">CSS3</span
+              ><span class="tag">Flexbox</span><span class="tag">Grid</span>
+            </div>
+          </div>
+          <div class="card skill-item" data-category="web prog">
+            <h4>JavaScript</h4>
+            <span style="font-size: 0.8rem; color: var(--cyan)"
+              >Intermediate</span
+            >
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 82%"></div>
+            </div>
+            <div class="tag-list">
+              <span class="tag">ES6+</span><span class="tag">DOM</span
+              ><span class="tag">Async/Await</span
+              ><span class="tag">Events</span>
+            </div>
+          </div>
+          <div class="card skill-item" data-category="prog">
+            <h4>Java</h4>
+            <span style="font-size: 0.8rem; color: var(--cyan)"
+              >Proficient</span
+            >
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 85%"></div>
+            </div>
+            <div class="tag-list">
+              <span class="tag">OOP</span><span class="tag">Collections</span
+              ><span class="tag">File I/O</span
+              ><span class="tag">Exceptions</span>
+            </div>
+          </div>
+          <div class="card skill-item" data-category="prog sys">
+            <h4>C++</h4>
+            <span style="font-size: 0.8rem; color: var(--cyan)"
+              >Proficient</span
+            >
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 80%"></div>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Pointers</span><span class="tag">Memory</span
+              ><span class="tag">STL</span><span class="tag">OOP</span>
+            </div>
+          </div>
+          <div class="card skill-item" data-category="prog sys">
+            <h4>Data Structures & Algorithms</h4>
+            <span style="font-size: 0.8rem; color: var(--cyan)"
+              >Strong Grasp</span
+            >
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 85%"></div>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Arrays/Lists</span
+              ><span class="tag">Trees/Graphs</span
+              ><span class="tag">Sorting</span><span class="tag">Big-O</span>
+            </div>
+          </div>
+          <div class="card skill-item" data-category="sys">
+            <h4>Software & Hardware Maintenance</h4>
+            <span style="font-size: 0.8rem; color: var(--cyan)">Hands-on</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 88%"></div>
+            </div>
+            <div class="tag-list">
+              <span class="tag">PC Diagnostics</span
+              ><span class="tag">OS Install</span
+              ><span class="tag">Assembly</span
+              ><span class="tag">Troubleshoot</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 2.5rem">
+          <span class="badge">Portfolio Projects</span>
+          <h2 style="font-size: 2rem; margin-top: 0.5rem">
+            Featured <span class="grad-text">Projects</span>
+          </h2>
+        </div>
+        <div class="grid-2">
+          <div class="card project-card">
+            <div>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <h3>Gebeta Game</h3>
+                <span class="badge">Playable Demo</span>
+              </div>
+              <p style="color: var(--text-sub); margin: 0.75rem 0">
+                Traditional Ethiopian Mancala strategy game. Implements seed
+                sowing algorithm, circular array board, turn logic, and score
+                calculation.
+              </p>
+              <div class="tag-list">
+                <span class="tag">JavaScript</span
+                ><span class="tag">Game Logic</span
+                ><span class="tag">Algorithms</span>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-sm" data-proj="gebeta">
+              Play Live Demo
+            </button>
+          </div>
+          <div class="card project-card">
+            <div>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <h3>Library Management System</h3>
+                <span class="badge">OOP</span>
+              </div>
+              <p style="color: var(--text-sub); margin: 0.75rem 0">
+                Comprehensive academic catalog system managing books, checkouts,
+                member cards, and search indexing built with Java/C++.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Java</span><span class="tag">C++</span
+                ><span class="tag">Data Structures</span
+                ><span class="tag">File I/O</span>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-sm" data-proj="library">
+              View System Details
+            </button>
+          </div>
+          <div class="card project-card">
+            <div>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <h3>Smart Restaurant System</h3>
+                <span class="badge">Web System</span>
+              </div>
+              <p style="color: var(--text-sub); margin: 0.75rem 0">
+                Dining platform enabling digital menus, real-time table
+                management, kitchen order tracking, and automated bill
+                calculations.
+              </p>
+              <div class="tag-list">
+                <span class="tag">JavaScript</span
+                ><span class="tag">Web UI</span
+                ><span class="tag">State Management</span>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-sm" data-proj="restaurant">
+              View System Details
+            </button>
+          </div>
+          <div class="card project-card">
+            <div>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <h3>Web & Algorithm Projects</h3>
+                <span class="badge">Showcase</span>
+              </div>
+              <p style="color: var(--text-sub); margin: 0.75rem 0">
+                Collection of responsive web applications, interactive sorting
+                visualizers, student task tools, and clean front-end components.
+              </p>
+              <div class="tag-list">
+                <span class="tag">HTML5</span><span class="tag">CSS3</span
+                ><span class="tag">JavaScript ES6</span>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-sm" data-proj="web">
+              View System Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Services & Goals -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 2.5rem">
+          <span class="badge">Services & Capabilities</span>
+          <h2 style="font-size: 2rem; margin-top: 0.5rem">
+            Services & <span class="grad-text">Goals</span>
+          </h2>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Web Development</h3>
+            <p style="color: var(--text-sub); margin: 0.75rem 0">
+              Building modern, responsive, mobile-friendly websites with clean
+              semantic HTML, custom CSS styling, and snappy JavaScript.
+            </p>
+            <ul
+              style="color: var(--cyan); font-size: 0.85rem; list-style: none"
+            >
+              <li>✓ Responsive layout design</li>
+              <li>✓ Cross-browser compatibility</li>
+              <li>✓ Fast & lightweight code</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Software Maintenance</h3>
+            <p style="color: var(--text-sub); margin: 0.75rem 0">
+              Software optimization, bug fixing, virus cleaning, OS
+              installation, and code refactoring for high stability.
+            </p>
+            <ul
+              style="color: var(--cyan); font-size: 0.85rem; list-style: none"
+            >
+              <li>✓ OS & driver configuration</li>
+              <li>✓ Bug fixing & code clean-up</li>
+              <li>✓ System optimization</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Hardware Maintenance</h3>
+            <p style="color: var(--text-sub); margin: 0.75rem 0">
+              PC assembly, hardware troubleshooting, thermal paste application,
+              component upgrades (RAM/SSD), and diagnostics.
+            </p>
+            <ul
+              style="color: var(--cyan); font-size: 0.85rem; list-style: none"
+            >
+              <li>✓ PC build & upgrade</li>
+              <li>✓ Component fault testing</li>
+              <li>✓ Preventative cleaning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Education -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 2.5rem">
+          <span class="badge">Education</span>
+          <h2 style="font-size: 2rem; margin-top: 0.5rem">
+            Academic <span class="grad-text">Background</span>
+          </h2>
+        </div>
+        <div class="card" style="max-width: 760px; margin: 0 auto">
+          <div class="timeline-card">
+            <span class="badge" style="margin-bottom: 0.5rem"
+              >Current: Year 3 (2024 - Present)</span
+            >
+            <h3>B.Sc. in Computer Science — 3rd Year</h3>
+            <p style="color: var(--cyan); font-weight: 600">
+              University • Faculty of Informatics
+            </p>
+            <p style="color: var(--text-sub); margin: 0.75rem 0">
+              Advanced coursework in web programming, relational database
+              systems, system architecture, and scalable software design.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Web Programming</span>
+              <span class="tag">Database Systems</span>
+              <span class="tag">Computer Architecture</span>
+              <span class="tag">Operating Systems</span>
+            </div>
+          </div>
+
+          <div class="timeline-card" style="margin-top: 1.5rem">
+            <span class="badge" style="margin-bottom: 0.5rem"
+              >Year 2 Milestone (2023 - 2024)</span
+            >
+            <h3>B.Sc. in Computer Science — 2nd Year</h3>
+            <p style="color: var(--cyan); font-weight: 600">
+              University • Core Fundamentals
+            </p>
+            <p style="color: var(--text-sub); margin: 0.75rem 0">
+              Mastered foundational computer science pillars: Object-Oriented
+              Programming (Java & C++), Data Structures & Algorithms, and
+              Computer Hardware Maintenance.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Data Structures & Algorithms</span>
+              <span class="tag">Java OOP</span>
+              <span class="tag">C++ Programming</span>
+              <span class="tag">Hardware & PC Maintenance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 2.5rem">
+          <span class="badge">Contact</span>
+          <h2 style="font-size: 2rem; margin-top: 0.5rem">
+            Get in <span class="grad-text">Touch</span>
+          </h2>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Contact Details</h3>
+            <p style="color: var(--text-sub); margin-bottom: 1.5rem">
+              Feel free to reach out for opportunities, projects, or
+              collaborations!
+            </p>
+            <div class="contact-item">
+              <span></span>
+              <div>
+                <b>Email:</b>
+                <a href="mailto:bizunew12@gmail.com" style="color: var(--cyan)"
+                  >bizunew12@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <span></span>
+              <div>
+                <b>Phone:</b>
+                <a href="tel:+251912031821" style="color: var(--cyan)"
+                  >+251 912 031 821</a
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <span></span>
+              <div>
+                <b>GitHub:</b>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  style="color: var(--cyan)"
+                  >github.com/bizunew</a
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <span></span>
+              <div><b>Social:</b> LinkedIn / Telegram Available</div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Send a Message</h3>
+            <form id="contact-form" style="margin-top: 1rem">
+              <input
+                type="text"
+                id="f-name"
+                class="input"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                id="f-email"
+                class="input"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                id="f-msg"
+                class="textarea"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn-primary" style="width: 100%">
+                Send Message
+              </button>
+              <div
+                id="form-res"
+                style="margin-top: 0.75rem; font-weight: 600; font-size: 0.9rem"
+              ></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Bizunew Lawgalet • 3rd-Year Computer Science Student</p>
+        <p style="margin-top: 0.3rem; font-size: 0.8rem">
+          Built efficiently with HTML, CSS, and JavaScript
+        </p>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+      <div class="modal-inner">
+        <button class="close-btn" id="modal-close">&times;</button>
+        <h3 id="modal-title" style="color: var(--cyan); margin-bottom: 1rem">
+          Project Details
+        </h3>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-top" id="back-top" title="Top">↑</button>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
