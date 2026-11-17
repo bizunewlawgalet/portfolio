@@ -6,38 +6,62 @@
     <title>Bizunew Lawgalet | CS Student & Developer Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="is-loading">
+    <div class="intro-screen" id="intro-screen" aria-label="Opening portfolio">
+      <div class="intro-content">
+        <div class="intro-mark" aria-hidden="true">
+          <span><small>Bizunew</small></span>
+          <span>L</span>
+          <i></i>
+        </div>
+        <p class="intro-name">BIZUNEW LAWGALET</p>
+        <h1><i><b>Portfolio</b></i></h1>
+        <div class="intro-rule" aria-hidden="true"><span></span></div>
+        <div class="intro-meta">
+          <span>COMPUTER SCIENCE</span>
+          <span>2026</span>
+        </div>
+      </div>
+    </div>
+
     <!-- Navigation -->
     <header class="header">
       <div class="container nav">
-        <a href="#home" class="logo"
+        <a href="#home" class="logo" aria-label="Bizunew Lawgalet home"
           ><span class="logo-tag">BL</span> Bizunew<span
             style="color: var(--cyan)"
             >.dev</span
           ></a
         >
         <nav class="nav-links" id="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#services">Services</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
+          <a href="#home"><small>01</small><span>Home</span></a>
+          <a href="#about"><small>02</small><span>About</span></a>
+          <a href="#services"><small>03</small><span>Services</span></a>
+          <a href="#education"><small>04</small><span>Academic</span></a>
+          <a href="#skills"><small>05</small><span>Skills</span></a>
+          <a href="#projects"><small>06</small><span>Projects</span></a>
+          <a href="#contact"><small>07</small><span>Contact</span></a>
         </nav>
         <div class="nav-actions">
           <button
             class="icon-btn"
             id="theme-toggle"
             title="Toggle Dark/Light"
+            aria-label="Toggle dark and light theme"
           ></button>
-          <button class="icon-btn menu-btn" id="menu-btn" title="Menu"></button>
+          <button
+            class="icon-btn menu-btn"
+            id="menu-btn"
+            title="Menu"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+          ></button>
         </div>
       </div>
     </header>
 
     <!-- 1. Home / Hero -->
-    <section class="hero" id="home">
+    <section class="page-section hero active" id="home">
       <div class="container grid-2">
         <div>
           <span class="badge"> Welcome to my Portfolio</span>
@@ -84,48 +108,40 @@
     </section>
 
     <!-- 2. About Me -->
-    <section class="section" id="about">
+    <section class="page-section section" id="about">
       <div class="container">
         <div class="text-center" style="margin-bottom: 2.5rem">
-          <span class="badge">About Me</span>
+          <span class="badge">My Background</span>
           <h2 style="font-size: 2rem; margin-top: 0.5rem">
-            Who I Am & <span class="grad-text">My Vision</span>
+            A Computer Science Student Who
+            <span class="grad-text">Builds with Technology</span>
           </h2>
         </div>
         <div class="grid-2">
           <div class="card">
-            <h3>Personal Introduction</h3>
-            <p style="color: var(--text-sub); margin: 1rem 0">
-              I am a <strong>3rd-year Computer Science student</strong> with a
-              keen interest in programming, problem solving, and system
-              architecture. I enjoy learning how systems function from low-level
-              memory & hardware up to responsive user interfaces.
+            <h3>My Story</h3>
+            <p class="about-copy">
+              My name is <strong>Bizunew Lawgalet Bizuayehu</strong>, and I am
+              a Computer Science student at
+              <strong>Debre Berhan University (DBU), Ethiopia</strong>. I come
+              from Afezez Berkato Kebele, Merhabete Woreda, North Shewa Zone,
+              Amhara Region.
             </p>
-            <div
-              style="
-                border-left: 3px solid var(--cyan);
-                padding-left: 1rem;
-                margin-top: 1.25rem;
-              "
-            >
-              <h4 style="color: var(--cyan)">Future Career Goal</h4>
-              <p
-                style="
-                  color: var(--text-sub);
-                  font-size: 0.92rem;
-                  margin-top: 0.3rem;
-                "
-              >
-                To become a versatile
-                <strong>Full-Stack Software Engineer & Solutions Builder</strong
-                >, crafting scalable systems, writing clean maintainable code,
-                and driving technological innovation.
-              </p>
-            </div>
+            <p class="about-copy">
+              Coming from a rural community has taught me the importance of
+              education, determination, and continuous learning. I believe that
+              one's background should never limit their ambitions or
+              opportunities for growth.
+            </p>
+            <p class="about-copy">
+              I enjoy understanding how technology works, solving complex
+              problems, learning new technologies, and turning ideas into
+              practical solutions.
+            </p>
           </div>
           <div class="grid-2" style="gap: 1rem">
             <div class="card">
-              <h4>Analytical Mind</h4>
+              <h4>Technical Interests</h4>
               <p
                 style="
                   color: var(--text-sub);
@@ -133,11 +149,13 @@
                   margin-top: 0.4rem;
                 "
               >
-                Data structures, algorithms, and computational problem solving.
+                Software development, algorithms and data structures, artificial
+                intelligence, databases, networking, web technologies, and
+                computer hardware and software maintenance.
               </p>
             </div>
             <div class="card">
-              <h4>Clean Code</h4>
+              <h4>My Goal</h4>
               <p
                 style="
                   color: var(--text-sub);
@@ -145,12 +163,12 @@
                   margin-top: 0.4rem;
                 "
               >
-                OOP principles in Java & C++, organized and maintainable
-                structure.
+                Continuously improve my technical skills, build innovative
+                projects, and use technology to solve real-world problems.
               </p>
             </div>
             <div class="card">
-              <h4>Responsive Web</h4>
+              <h4>Giving Back</h4>
               <p
                 style="
                   color: var(--text-sub);
@@ -158,12 +176,12 @@
                   margin-top: 0.4rem;
                 "
               >
-                Modern semantic HTML, responsive CSS, and interactive
-                JavaScript.
+                Inspire young people, especially those from rural communities,
+                to pursue knowledge and believe in their potential.
               </p>
             </div>
             <div class="card">
-              <h4>🔧 Hardware & OS</h4>
+              <h4>My Values</h4>
               <p
                 style="
                   color: var(--text-sub);
@@ -171,7 +189,8 @@
                   margin-top: 0.4rem;
                 "
               >
-                Hands-on PC diagnostics, OS setup, and troubleshooting.
+                Continuous learning, creativity, and meaningful contribution to
+                society and the development of Ethiopia.
               </p>
             </div>
           </div>
@@ -180,7 +199,7 @@
     </section>
 
     <!-- 3. Skills -->
-    <section class="section" id="skills">
+    <section class="page-section section" id="skills">
       <div class="container">
         <div class="text-center" style="margin-bottom: 2rem">
           <span class="badge">Technical Skills</span>
@@ -281,7 +300,7 @@
     </section>
 
     <!-- 4. Projects -->
-    <section class="section" id="projects">
+    <section class="page-section section" id="projects">
       <div class="container">
         <div class="text-center" style="margin-bottom: 2.5rem">
           <span class="badge">Portfolio Projects</span>
@@ -400,7 +419,7 @@
     </section>
 
     <!-- 5. Services & Goals -->
-    <section class="section" id="services">
+    <section class="page-section section" id="services">
       <div class="container">
         <div class="text-center" style="margin-bottom: 2.5rem">
           <span class="badge">Services & Capabilities</span>
@@ -456,7 +475,7 @@
     </section>
 
     <!-- 6. Education -->
-    <section class="section" id="education">
+    <section class="page-section section" id="education">
       <div class="container">
         <div class="text-center" style="margin-bottom: 2.5rem">
           <span class="badge">Education</span>
@@ -510,7 +529,7 @@
     </section>
 
     <!-- 7. Contact -->
-    <section class="section" id="contact">
+    <section class="page-section section" id="contact">
       <div class="container">
         <div class="text-center" style="margin-bottom: 2.5rem">
           <span class="badge">Contact</span>
@@ -557,7 +576,7 @@
             </div>
             <div class="contact-item">
               <span></span>
-              <div><b>Social:</b> LinkedIn / Telegram Available</div>
+              <div><b>Social:</b> LinkedIn /Telegram (@Blazex12)</div>
             </div>
           </div>
           <div class="card">

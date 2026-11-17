@@ -1,13 +1,22 @@
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  
+  const introScreen = document.getElementById("intro-screen");
+  window.setTimeout(() => {
+    document.body.classList.remove("is-loading");
+    introScreen?.remove();
+  }, 3400);
+
   // 1. Theme Switcher (Dark/Light)
   const themeBtn = document.getElementById("theme-toggle");
   const setTheme = (t) => {
     document.documentElement.setAttribute("data-theme", t);
     localStorage.setItem("theme", t);
-    themeBtn.textContent = t === "light" ? "" : "";
+    themeBtn.textContent = t === "light" ? "☀" : "☾";
+    themeBtn.setAttribute(
+      "aria-label",
+      t === "light" ? "Switch to dark theme" : "Switch to light theme",
+    );
   };
   setTheme(localStorage.getItem("theme") || "dark");
   themeBtn.onclick = () =>
@@ -19,11 +28,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 2. Mobile Navigation Toggle
   const navMenu = document.getElementById("nav-links");
-  document.getElementById("menu-btn").onclick = () =>
-    navMenu.classList.toggle("open");
-  navMenu
-    .querySelectorAll("a")
-    .forEach((a) => (a.onclick = () => navMenu.classList.remove("open")));
+  const menuBtn = document.getElementById("menu-btn");
+  menuBtn.textContent = "☰";
+  menuBtn.onclick = () => {
+    const isOpen = navMenu.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", String(isOpen));
+    menuBtn.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+  };
+  const sections = document.querySelectorAll(".page-section[id]");
+  const navLinks = navMenu.querySelectorAll("a");
+  const showSection = (sectionId, updateUrl = true) => {
+    const target = document.getElementById(sectionId) || document.getElementById("home");
+    sections.forEach((section) => {
+      const isActive = section === target;
+      section.classList.toggle("active", isActive);
+      section.setAttribute("aria-hidden", String(!isActive));
+    });
+    navLinks.forEach((link) => {
+      const target = link.getAttribute("href").slice(1);
+      link.classList.toggle("active", target === sectionId);
+    });
+    window.scrollTo({ top: 0, behavior: "auto" });
+    if (updateUrl && window.location.hash !== `#${target.id}`) {
+      history.replaceState(null, "", `#${target.id}`);
+    }
+  };
+  navLinks.forEach((link) => {
+    link.onclick = (event) => {
+      event.preventDefault();
+      showSection(link.getAttribute("href").slice(1));
+      navMenu.classList.remove("open");
+      menuBtn.setAttribute("aria-expanded", "false");
+      menuBtn.setAttribute("aria-label", "Open navigation menu");
+    };
+  });
+  window.addEventListener("hashchange", () => showSection(window.location.hash.slice(1), false));
+  showSection(window.location.hash.slice(1) || "home", false);
 
   // 3. Typing Animation in Hero
   const roles = [
