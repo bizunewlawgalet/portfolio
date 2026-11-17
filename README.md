@@ -1,49 +1,65 @@
-# Bizunew Lawgalet – Personal Portfolio Website (Efficient Edition)
+# Bizunew Lawgalet Portfolio
 
-An ultra-efficient, lightweight, and modern personal portfolio website showcasing **Bizunew Lawgalet**, a 3rd-year Computer Science student, software developer, and hardware/software technician.
+A lightweight personal portfolio for **Bizunew Lawgalet Bizuayehu**, a
+Computer Science student, software developer, and hardware and software
+technician.
 
----
+The site is built with semantic HTML, modern CSS, and vanilla JavaScript. It
+has no external framework or runtime dependency.
 
-## ⚡ Efficiency & Code Stats
+## Features
 
-- **Total Code Lines**: ~490 lines across the entire codebase (HTML ~290 lines, CSS ~95 lines, JS ~100 lines)
-- **Zero Heavy Dependencies**: Pure semantic HTML5, modern CSS3, and vanilla ES6+ JavaScript.
-- **Fast Load Speed**: Instantaneous rendering, no bulky external libraries.
-- **100% Feature Complete**: Retains all required sections, responsive layout, dark/light theme switcher, typing animation, playable Gebeta board game, and contact validation.
+- Professional opening splash screen with the BL mark
+- Blue responsive navigation with numbered page links
+- Section-based navigation that displays one page at a time
+- Dark and light themes
+- Responsive layout for desktop and mobile screens
+- Animated role text on the Home page
+- Skills filtering by category
+- Interactive Gebeta board game
+- Project details modal dialogs
+- Contact form validation
+- Back-to-top control
 
----
+## Pages
 
-## 🚀 How to Run
+1. **Home**: Introduction, current role, profile image, and key statistics.
+2. **About**: Personal background, education, interests, goals, and values.
+3. **Services**: Web development, software maintenance, and hardware
+   maintenance capabilities.
+4. **Academic**: Computer Science education and coursework.
+5. **Skills**: Web, programming, and systems skills with category filters.
+6. **Projects**: Gebeta Game, Library Management System, Smart Restaurant
+   System, and web and algorithm projects.
+7. **Contact**: Email, phone, GitHub, social information, and contact form.
 
-1. Open folder: `d:\3rd_year\code\portfolio`
-2. Double-click `index.html` to open in any web browser.
-
----
-
-## 📁 Clean Structure
+## Project Structure
 
 ```text
 portfolio/
-├── index.html           # Clean, concise semantic structure (~290 lines)
+├── index.html           # Portfolio page structure and content
 ├── css/
-│   └── style.css        # High-efficiency, modular CSS with themes (~95 lines)
+│   └── style.css        # Theme, layout, responsive styles, and animations
 ├── js/
-│   └── main.js          # Compact vanilla JavaScript with all interactions (~100 lines)
-└── README.md            # Documentation
+│   └── main.js          # Navigation and interactive features
+├── assets/
+│   └── profile.jpg      # Profile image
+└── README.md            # Project documentation
 ```
 
----
+## Run Locally
 
-## 🌟 Included Sections
+No installation or build step is required.
 
-1. **Home 🏠**: Name (Bizunew Lawgalet), role typing animation, short introduction, profile card with avatar, "View My Projects" CTA.
-2. **About Me 👤**: 3rd-year Computer Science background, core problem-solving attributes, and career goal (Full-Stack Software Engineer & Solutions Architect).
-3. **Skills 💻**: HTML & CSS, JavaScript, Java, C++, Data Structures & Algorithms, and Software/Hardware Maintenance, with filter tabs (All, Web, Programming, CS & Systems).
-4. **Projects 🛠️**:
-   - **Gebeta Game**: Playable interactive Ethiopian Mancala simulation with live turn and score tracking.
-   - **Library Management System**: Academic cataloging & search indexing.
-   - **Smart Restaurant System**: Digital ordering & table management.
-   - **Web & Algorithm Projects**: Sorting visualizers & tools.
-5. **Services & Goals 🔧**: Web development, software maintenance, and hardware maintenance.
-6. **Education 🎓**: University B.Sc. in Computer Science (Current Year 3) with core coursework.
-7. **Contact 📞**: Direct Email, Phone, GitHub, Socials, and an interactive contact form with validation.
+1. Clone or download the repository.
+2. Open the project folder.
+3. Open `index.html` in a modern web browser.
+
+For the best experience, use a local development server when working on the
+project in an editor.
+
+## Contact
+
+- Email: bizunew12@gmail.com
+- Phone: +251 912 031 821
+- GitHub: [github.com/bizunew](https://github.com/bizunew)
